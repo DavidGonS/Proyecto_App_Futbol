@@ -1,6 +1,7 @@
 ## Proyecto App Futbol
 
 1. Parte Usuario: 
+    - Inicio Sesion
     - Menu principal con ligas
     - Liga:
         - Clasificacion
