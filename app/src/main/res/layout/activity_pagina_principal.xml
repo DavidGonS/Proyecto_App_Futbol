@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaginaPrincipal.PaginaPrincipal">
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:padding="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/ibLaLiga"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/laliga" />
+
+            <ImageButton
+                android:id="@+id/ibPremier"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/premier" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/ibLigue1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ligue1" />
+
+            <ImageButton
+                android:id="@+id/ibBundesliga"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/bundesliga" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
