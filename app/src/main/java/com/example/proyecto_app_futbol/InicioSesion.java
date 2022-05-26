@@ -27,24 +27,56 @@ public class InicioSesion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        etEmail = findViewById(R.id.etEmail);
-        etContrasena = findViewById(R.id.etContrasena);
-        btIniciar = findViewById(R.id.btIniciar);
-
-        // No se porque no crea la base de datos
-//        DBHelper dbHelper = new DBHelper(this);
-//        SQLiteDatabase db = dbHelper.getReadableDatabase();
-//        if (db != null) {
-//            Toast.makeText(this, "creada", Toast.LENGTH_SHORT).show();
-//        } else {
-//            Toast.makeText(this, "no creada", Toast.LENGTH_SHORT).show();
-//        }
+        createDatabaseAndTables();
 
     }
 
     public void iniciarSesion(View view){
         Intent intent = new Intent(this, PaginaPrincipal.class);
         startActivity(intent);
+    }
+
+    public void createDatabaseAndTables() {
+        DBHelper dbHelper = new DBHelper(this, "appfut.sqlite", null, 1);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        db.execSQL("CREATE TABLE IF NOT EXISTS Equipos (" +
+                "idEquipo INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "nombre TEXT, " +
+                "estadio TEXT, " +
+                "puntuacion INTEGER, " +
+                "FOREIGN KEY (idLiga) REFERENCES Liga(idLiga))");
+
+        db.execSQL("CREATE TABLE IF NOT EXISTS Jugadores (idJugador INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "nombre TEXT, " +
+                "apellido TEXT, " +
+                "fechaNacimiento INTEGER, " +
+                "dorsal INTEGER, " +
+                "nacionalidad TEXT, " +
+                "posicion TEXT, " +
+                "valorMercado INTEGER, " +
+                "idEquipo INTEGER, " +
+                "FOREIGN KEY (idEquipo) REFERENCES Equipos(idEquipo))");
+
+        db.execSQL("CREATE TABLE IF NOT EXISTS Ligas(idLiga INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "nombre TEXT, pais TEXT, " +
+                "idEquipo INTEGER, " +
+                "FOREIGN KEY (idEquipo) REFERENCES Equipos(idEquipo))");
+
+        db.execSQL("CREATE TABLE IF NOT EXISTS Partidos(idPartido INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "numeroJornada INTEGER, fecha INTEGER, resultado INTEGER, " +
+                "idEquipoLocal INTEGER, " +
+                "idEquipoVisitante," +
+                "FOREIGN KEY (idEquipoLocal) REFERENCES Equipos(idEquipo)," +
+                "FOREIGN KEY (idEquipoVisitante) REFERENCES Equipos(idEquipo))");
+
+        db.execSQL("CREATE TABLE IF NOT EXISTS Clasificaciones(idClasificacion INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "posicion INTEGER, " +
+                "partidosGanados INTEGER, " +
+                "partidosEmpatados INTEGER, " +
+                "partidosPerdidos INTEGER, " +
+                "golesFavor INTEGER, " +
+                "golesContra INTEGER, " +
+                "idEquipo INTEGER, " +
+                "FOREIGN KEY (idEquipo) REFERENCES Equipos(idEquipo))");
     }
 }
