@@ -24,6 +24,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:backgroundTint="@color/white"
+                android:onClick="changeLaLiga"
                 android:scaleType="fitCenter"
                 android:src="@drawable/laliga" />
 
@@ -32,6 +33,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:backgroundTint="@color/white"
+                android:onClick="changePremierLeague"
                 android:scaleType="fitCenter"
                 android:src="@drawable/premier" />
 
@@ -46,6 +48,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:backgroundTint="@color/white"
+                android:onClick="changeLigueOne"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ligue1" />
 
@@ -54,6 +57,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:backgroundTint="@color/white"
+                android:onClick="changeBundesliga"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/bundesliga" />
         </TableRow>
