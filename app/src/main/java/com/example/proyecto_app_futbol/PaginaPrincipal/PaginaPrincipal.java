@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.proyecto_app_futbol.Bundesliga;
-import com.example.proyecto_app_futbol.LaLigaPrincipal;
+import com.example.proyecto_app_futbol.EjemploMenuLiga;
+import com.example.proyecto_app_futbol.LaLiga;
 import com.example.proyecto_app_futbol.LigueOne;
 import com.example.proyecto_app_futbol.PremierLeague;
 import com.example.proyecto_app_futbol.R;
@@ -26,7 +27,7 @@ public class PaginaPrincipal extends AppCompatActivity {
         startActivity(intent);
     }
     public void changeLaLiga(View view) {
-        Intent intent = new Intent(this, LaLigaPrincipal.class);
+        Intent intent = new Intent(this, EjemploMenuLiga.class);
         startActivity(intent);
     }
     public void changeBundesliga(View view) {

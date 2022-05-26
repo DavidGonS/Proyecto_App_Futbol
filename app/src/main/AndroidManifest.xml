@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto_App_Futbol">
         <activity
+            android:name=".EjemploMenuLiga"
+            android:exported="false" />
+        <activity
             android:name=".LigueOne"
             android:exported="false" />
         <activity
@@ -19,7 +22,7 @@
             android:name=".Bundesliga"
             android:exported="false" />
         <activity
-            android:name=".LaLigaPrincipal"
+            android:name=".LaLiga"
             android:exported="false" />
         <activity
             android:name=".PaginaPrincipal.PaginaPrincipal"
