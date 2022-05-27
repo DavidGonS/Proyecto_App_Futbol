@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Proyecto_App_Futbol</string>
+    <string name="tituloInicioSesion">Inicio Sesion</string>
+    <string name="tituloMenuPrincipal">Menu Principal</string>
+    <string name="tituloMenuLaLiga">La Liga</string>
+    <string name="tituloMenuBundesliga">Bundesliga</string>
+    <string name="tituloMenuPremier">Premier League</string>
+    <string name="tituloMenuLigueOne">Ligue 1 Uber Eats</string>
+    <string name="tituloClasificacion">Clasificacion</string>
+    <string name="tituloEquipos">Equipos</string>
 </resources>

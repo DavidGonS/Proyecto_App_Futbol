@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class LaLiga extends AppCompatActivity {
+public class EquiposLaLiga extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_la_liga);
+        setContentView(R.layout.activity_equipos_la_liga);
+        this.setTitle(R.string.tituloEquipos);
+
     }
 }

@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EjemploMenuLiga extends AppCompatActivity {
+public class ClasificacionLaLiga extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ejemplo_menu_liga);
+        setContentView(R.layout.activity_clasificacion_la_liga);
+        this.setTitle(R.string.tituloClasificacion);
     }
 }

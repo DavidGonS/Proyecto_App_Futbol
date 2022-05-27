@@ -9,6 +9,7 @@ public class PremierLeague extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_premier_league);
+        setContentView(R.layout.activity_menu_premier_league);
+        this.setTitle(R.string.tituloMenuPremier);
     }
 }
