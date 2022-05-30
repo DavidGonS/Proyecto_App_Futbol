@@ -4,14 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
 public class ClasificacionLaLiga extends AppCompatActivity {
-    TableLayout tlClasificacion;
+    private TableLayout tlClasificacion;
+    private Window window;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +23,16 @@ public class ClasificacionLaLiga extends AppCompatActivity {
         setContentView(R.layout.activity_clasificacion_la_liga);
         this.setTitle(R.string.tituloClasificacion);
 
+        init();
+        // llenarTabla();
+    }
+
+    public void init(){
         tlClasificacion = (TableLayout) findViewById(R.id.tlClasificacion);
 
-        // llenarTabla();
+        this.window = getWindow();
+        window.setStatusBarColor(Color.parseColor("#4CAF50"));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4CAF50")));
     }
 
     // Por ahora no funciona porque creo que tienen que haber datos metidos
@@ -37,9 +48,10 @@ public class ClasificacionLaLiga extends AppCompatActivity {
                 null);
         cursor.moveToFirst();
 
+        View view = LayoutInflater.from(this).inflate(R.layout.item_clasificacion, null, false);
+
         // Mientras que cursor lea el siguiente registro añade los textview a la vista y los rellena con los datos
         do {
-            View view = LayoutInflater.from(this).inflate(R.layout.item_clasificacion, null, false);
             TextView tvPosicion = view.findViewById(R.id.tvPosicion);
             TextView tvNombre = view.findViewById(R.id.tvNombre);
             TextView tvPartidosJugados = view.findViewById(R.id.tvPartJugados);

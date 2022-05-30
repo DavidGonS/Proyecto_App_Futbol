@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class PremierLeague extends AppCompatActivity {
+public class MenuPremierLeague extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

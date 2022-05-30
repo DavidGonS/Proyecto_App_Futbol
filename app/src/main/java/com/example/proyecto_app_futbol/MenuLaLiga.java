@@ -3,12 +3,16 @@ package com.example.proyecto_app_futbol;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 public class MenuLaLiga extends AppCompatActivity {
     private Button btClasificacion, btEquipos, btJugadores;
+    private Window window;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,14 +20,19 @@ public class MenuLaLiga extends AppCompatActivity {
         setContentView(R.layout.activity_menu_la_liga);
 
         this.setTitle(R.string.tituloMenuLaLiga);
+        init();
+        goToClasification();
+        goToTeams();
+    }
 
+    public void init(){
         btClasificacion = (Button) findViewById(R.id.btClasificacion);
         btEquipos = (Button) findViewById(R.id.btEquipos);
         btJugadores = (Button) findViewById(R.id.btJugadores);
 
-
-        goToClasification();
-        goToTeams();
+        this.window = getWindow();
+        window.setStatusBarColor(Color.parseColor("#4CAF50"));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4CAF50")));
     }
 
     public void goToClasification(){

@@ -11,6 +11,7 @@
         android:layout_height="729dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
+        android:background="#009688"
         android:padding="55dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -37,6 +38,15 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/premier" />
 
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
         </TableRow>
 
         <TableRow

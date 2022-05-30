@@ -16,13 +16,13 @@
             android:name=".MenuLaLiga"
             android:exported="false" />
         <activity
-            android:name=".LigueOne"
+            android:name=".MenuLigueOne"
             android:exported="false" />
         <activity
-            android:name=".PremierLeague"
+            android:name=".MenuPremierLeague"
             android:exported="false" />
         <activity
-            android:name=".Bundesliga"
+            android:name=".MenuBundesliga"
             android:exported="false" />
         <activity
             android:name=".ClasificacionLaLiga"
