@@ -65,6 +65,8 @@ public class InicioSesion extends AppCompatActivity {
 
         db.execSQL("CREATE TABLE IF NOT EXISTS Clasificaciones(idClasificacion INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "posicion INTEGER, " +
+                "nombre TEXT, " +
+                "partidosJugados INTEGER, " +
                 "partidosGanados INTEGER, " +
                 "partidosEmpatados INTEGER, " +
                 "partidosPerdidos INTEGER, " +
