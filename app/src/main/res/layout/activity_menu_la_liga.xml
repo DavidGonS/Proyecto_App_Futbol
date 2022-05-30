@@ -35,7 +35,8 @@
                 android:layout_height="70dp"
                 android:layout_weight=".25"
                 android:backgroundTint="#4CAF50"
-                android:text="Clasificacion" />
+                android:text="Clasificacion"
+                tools:ignore="TextContrastCheck" />
 
         </TableRow>
 
@@ -58,7 +59,8 @@
                 android:layout_height="70dp"
                 android:layout_weight=".25"
                 android:backgroundTint="#4CAF50"
-                android:text="Equipos" />
+                android:text="Equipos"
+                tools:ignore="TextContrastCheck" />
         </TableRow>
 
         <TableRow
@@ -80,7 +82,8 @@
                 android:layout_height="70dp"
                 android:layout_weight=".25"
                 android:backgroundTint="#4CAF50"
-                android:text="Jugadores" />
+                android:text="Jugadores"
+                tools:ignore="TextContrastCheck" />
         </TableRow>
 
         <TableRow
@@ -102,7 +105,8 @@
                 android:layout_height="70dp"
                 android:layout_weight=".25"
                 android:backgroundTint="#4CAF50"
-                android:text="Partidos" />
+                android:text="Partidos"
+                tools:ignore="TextContrastCheck" />
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
