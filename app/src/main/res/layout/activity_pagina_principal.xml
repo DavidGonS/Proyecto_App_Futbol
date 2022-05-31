@@ -27,7 +27,8 @@
                 android:backgroundTint="@color/white"
                 android:onClick="changeLaLiga"
                 android:scaleType="fitCenter"
-                android:src="@drawable/laliga" />
+                android:src="@drawable/laliga"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
                 android:id="@+id/ibPremier"
@@ -36,7 +37,8 @@
                 android:backgroundTint="@color/white"
                 android:onClick="changePremierLeague"
                 android:scaleType="fitCenter"
-                android:src="@drawable/premier" />
+                android:src="@drawable/premier"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </TableRow>
 
@@ -60,7 +62,8 @@
                 android:backgroundTint="@color/white"
                 android:onClick="changeLigueOne"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ligue1" />
+                android:src="@drawable/ligue1"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageButton
                 android:id="@+id/ibBundesliga"
@@ -69,7 +72,8 @@
                 android:backgroundTint="@color/white"
                 android:onClick="changeBundesliga"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/bundesliga" />
+                app:srcCompat="@drawable/bundesliga"
+                tools:ignore="SpeakableTextPresentCheck" />
         </TableRow>
 
     </TableLayout>

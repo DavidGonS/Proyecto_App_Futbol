@@ -8,4 +8,20 @@
     <string name="tituloMenuLigueOne">Ligue 1 Uber Eats</string>
     <string name="tituloClasificacion">Clasificacion</string>
     <string name="tituloEquipos">Equipos</string>
+    <string name="clasi_fr">Clasificación</string>
+    <string name="equipo_fr">Equipos</string>
+    <string name="jugador_fr">Jugadores</string>
+    <string name="partido_fr">Partido</string>
+    <string name="buttPr_clasificacion">Clasificación</string>
+    <string name="buttPr_eq">Equipos</string>
+    <string name="buttPr_jug">Jugadores</string>
+    <string name="buttPr_part">Partidos</string>
+    <string name="buttLg_clasif">Clasificacion</string>
+    <string name="buttLg_jug">Jugadores</string>
+    <string name="buttLg_part">Partidos</string>
+    <string name="buttPr_equp">Equipos</string>
+    <string name="butBund_clasif">Clasificacion</string>
+    <string name="butBund_equip">Equipos</string>
+    <string name="butBund_juga">Jugadores</string>
+    <string name="butBund_parti">Partidos</string>
 </resources>

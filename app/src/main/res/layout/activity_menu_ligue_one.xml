@@ -17,6 +17,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ligue1" />
@@ -39,7 +40,8 @@
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight=".25"
-                android:text="Clasificación"
+                android:backgroundTint="#103B4E"
+                android:text="@string/clasi_fr"
                 tools:ignore="TextContrastCheck" />
         </TableRow>
 
@@ -61,7 +63,8 @@
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight=".25"
-                android:text="Equipos"
+                android:backgroundTint="#103B4E"
+                android:text="@string/equipo_fr"
                 tools:ignore="TextContrastCheck" />
         </TableRow>
 
@@ -83,7 +86,8 @@
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight=".25"
-                android:text="Jugadores"
+                android:backgroundTint="#103B4E"
+                android:text="@string/jugador_fr"
                 tools:ignore="TextContrastCheck" />
         </TableRow>
 
@@ -105,7 +109,9 @@
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight=".25"
-                android:text="Partido" />
+                android:backgroundTint="#103B4E"
+                android:text="@string/partido_fr"
+                tools:ignore="TextContrastCheck" />
         </TableRow>
     </TableLayout>
 
