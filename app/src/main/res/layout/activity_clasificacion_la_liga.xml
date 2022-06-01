@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:id="@+id/tlClasificacion"
+        android:id="@+id/tlJugadores"
         android:layout_width="404dp"
         android:layout_height="429dp"
         android:layout_margin="10dp"

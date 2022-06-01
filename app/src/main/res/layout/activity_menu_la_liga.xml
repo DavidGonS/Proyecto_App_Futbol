@@ -54,34 +54,12 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/btEquipos"
-                android:layout_width="0dp"
-                android:layout_height="70dp"
-                android:layout_weight=".25"
-                android:backgroundTint="#4CAF50"
-                android:text="@string/buttPr_equp"
-                tools:ignore="TextContrastCheck" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="50dp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
                 android:id="@+id/btJugadores"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight=".25"
                 android:backgroundTint="#4CAF50"
+                android:onClick="jugadores"
                 android:text="@string/buttLg_jug"
                 tools:ignore="TextContrastCheck" />
         </TableRow>

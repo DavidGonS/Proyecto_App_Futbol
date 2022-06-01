@@ -22,17 +22,20 @@ public class MenuLaLiga extends AppCompatActivity {
         this.setTitle(R.string.tituloMenuLaLiga);
         init();
         goToClasification();
-        goToTeams();
     }
 
     public void init(){
         btClasificacion = (Button) findViewById(R.id.btClasificacion);
-        btEquipos = (Button) findViewById(R.id.btEquipos);
         btJugadores = (Button) findViewById(R.id.btJugadores);
 
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#4CAF50"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4CAF50")));
+    }
+
+    public void jugadores(View view) {
+        Intent intent = new Intent(this, JugadoresLaLiga.class);
+        startActivity(intent);
     }
 
     public void goToClasification(){
@@ -43,14 +46,6 @@ public class MenuLaLiga extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-    public void goToTeams() {
-        btEquipos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuLaLiga.this, EquiposLaLiga.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }
