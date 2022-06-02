@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class PantallaAdministrador extends AppCompatActivity {
+public class AnadirLiga extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantalla_administrador);
+        setContentView(R.layout.activity_anadir_liga);
     }
 }

@@ -41,7 +41,7 @@ public class InicioSesion extends AppCompatActivity {
     }
 
     public void administrador(View view) {
-        Intent intent = new Intent(this, PantallaAdministrador.class);
+        Intent intent = new Intent(this, MenuAdministrador.class);
         startActivity(intent);
     }
 
