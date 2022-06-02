@@ -3,17 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_clasificacion_la_liga.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_jugadores_la_liga.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_menu_bundesliga.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_menu_la_liga.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_menu_ligue_one.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/activity_menu_premier_league.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_pagina_principal.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_pantalla_administrador.xml" value="0.35625" />
-        <entry key="app/src/main/res/layout/item_clasificacion.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/item_jugadores.xml" value="0.35625" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_clasificacion_la_liga.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_ejemplo_menu_liga.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_la_liga.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_la_liga_principal.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_ligue_one.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_menu_la_liga.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_pagina_principal.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_premier_league.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/item_clasificacion.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/item_la_liga_clasificacion.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/list_item_clasificacion.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_menu_la_liga.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_menu_ligue_one.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_menu_premier_league.xml" value="0.33" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_pantalla_administrador.xml" value="0.33" />
+        <entry key="..\:/Users/trchfc/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_clasificacion_la_liga.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/trchfc/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_equipos_la_liga.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/trchfc/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_menu_bundesliga.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/trchfc/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_menu_la_liga.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/trchfc/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_menu_ligue_one.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/trchfc/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_menu_premier_league.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/trchfc/StudioProjects/Proyecto_App_Futbol/app/src/main/res/layout/activity_pagina_principal.xml" value="0.358695652173913" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_pagina_principal.xml" value="0.35625" />
       </map>
     </option>
   </component>
@@ -22,5 +37,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.358695652173913" />
+      </ProjectState>
+    </option>
   </component>
 </project>
