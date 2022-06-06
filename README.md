@@ -13,4 +13,5 @@
         - Informacion
 
 2. Parte Administrador (API Rest):
-    - Insertar, eliminar y modificar clasificacion, partidos, ligas y jugadores
+    - Menu Administrador 
+        - Insertar, eliminar y modificar clasificacion, partidos, ligas y jugadores
