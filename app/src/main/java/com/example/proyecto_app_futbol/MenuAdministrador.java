@@ -18,4 +18,9 @@ public class MenuAdministrador extends AppCompatActivity {
         Intent intent = new Intent(this, LigasAdministrador.class);
         startActivity(intent);
     }
+
+    public void goToPlayers(View view) {
+        Intent intent = new Intent(this, JugadoresAdministrador.class);
+        startActivity(intent);
+    }
 }

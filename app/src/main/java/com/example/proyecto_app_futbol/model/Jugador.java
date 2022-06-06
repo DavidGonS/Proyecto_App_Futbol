@@ -13,7 +13,6 @@ public class Jugador {
     private String nacionalidad;
     private String posicion;
     private int valorMercado;
-    private int idEquipo;
 
     @JsonCreator
     public Jugador(
@@ -23,8 +22,7 @@ public class Jugador {
             @JsonProperty("dorsal") int dorsal,
             @JsonProperty("nacionalidad") String nacionalidad,
             @JsonProperty("posicion") String posicion,
-            @JsonProperty("valorMercado") int valorMercado,
-            @JsonProperty("idEquipo") int idEquipo) {
+            @JsonProperty("valorMercado") int valorMercado) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaNacimiento = fechaNacimiento;
@@ -32,7 +30,6 @@ public class Jugador {
         this.nacionalidad = nacionalidad;
         this.posicion = posicion;
         this.valorMercado = valorMercado;
-        this.idEquipo = idEquipo;
     }
 
     public String getNombre() {
@@ -91,25 +88,17 @@ public class Jugador {
         this.valorMercado = valorMercado;
     }
 
-    public int getIdEquipo() {
-        return idEquipo;
-    }
-
-    public void setIdEquipo(int idEquipo) {
-        this.idEquipo = idEquipo;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Jugador jugador = (Jugador) o;
-        return dorsal == jugador.dorsal && valorMercado == jugador.valorMercado && idEquipo == jugador.idEquipo && Objects.equals(nombre, jugador.nombre) && Objects.equals(apellido, jugador.apellido) && Objects.equals(fechaNacimiento, jugador.fechaNacimiento) && Objects.equals(nacionalidad, jugador.nacionalidad) && Objects.equals(posicion, jugador.posicion);
+        return dorsal == jugador.dorsal && valorMercado == jugador.valorMercado && Objects.equals(nombre, jugador.nombre) && Objects.equals(apellido, jugador.apellido) && Objects.equals(fechaNacimiento, jugador.fechaNacimiento) && Objects.equals(nacionalidad, jugador.nacionalidad) && Objects.equals(posicion, jugador.posicion);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nombre, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, valorMercado, idEquipo);
+        return Objects.hash(nombre, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, valorMercado);
     }
 
     @Override
@@ -122,7 +111,6 @@ public class Jugador {
                 ", nacionalidad='" + nacionalidad + '\'' +
                 ", posicion='" + posicion + '\'' +
                 ", valorMercado=" + valorMercado +
-                ", idEquipo=" + idEquipo +
                 '}';
     }
 }
