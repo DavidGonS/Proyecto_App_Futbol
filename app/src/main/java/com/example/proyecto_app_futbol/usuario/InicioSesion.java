@@ -1,4 +1,4 @@
-package com.example.proyecto_app_futbol;
+package com.example.proyecto_app_futbol.usuario;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,8 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.proyecto_app_futbol.paginaprincipal.PaginaPrincipal;
+import com.example.proyecto_app_futbol.admin.MenuAdministrador;
+import com.example.proyecto_app_futbol.R;
 
 public class InicioSesion extends AppCompatActivity {
     private EditText etEmail, etContrasena;

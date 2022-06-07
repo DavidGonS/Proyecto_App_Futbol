@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00BCD4"
-    tools:context=".MenuAdministrador">
+    tools:context=".admin.MenuAdministrador">
 
     <Button
         android:id="@+id/btJugadoresAdmin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="77dp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="34dp"
         android:backgroundTint="#3F51B5"
         android:onClick="goToPlayers"
         android:text="Jugadores"
@@ -21,34 +21,34 @@
 
     <Button
         android:id="@+id/btEquiposAdmin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="77dp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#3F51B5"
         android:text="Equipos"
-        app:layout_constraintStart_toEndOf="@+id/btJugadoresAdmin"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloAdmin" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btJugadoresAdmin" />
 
     <Button
         android:id="@+id/btLigasAdmin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#3F51B5"
         android:onClick="goToLigas"
         android:text="Ligas"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btJugadoresAdmin" />
+        app:layout_constraintTop_toBottomOf="@+id/btEquiposAdmin" />
 
     <TextView
         android:id="@+id/tvTituloAdmin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="42dp"
-        android:text="ADMINISTRACION"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="45dp"
+        android:text="MENU ADMINISTRACIÓN"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

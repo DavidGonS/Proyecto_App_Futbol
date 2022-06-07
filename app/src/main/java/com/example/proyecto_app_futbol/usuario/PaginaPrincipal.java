@@ -1,4 +1,4 @@
-package com.example.proyecto_app_futbol.paginaprincipal;
+package com.example.proyecto_app_futbol.usuario;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,10 +10,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageButton;
 
-import com.example.proyecto_app_futbol.MenuBundesliga;
-import com.example.proyecto_app_futbol.MenuLaLiga;
-import com.example.proyecto_app_futbol.MenuLigueOne;
-import com.example.proyecto_app_futbol.MenuPremierLeague;
 import com.example.proyecto_app_futbol.R;
 
 public class PaginaPrincipal extends AppCompatActivity {

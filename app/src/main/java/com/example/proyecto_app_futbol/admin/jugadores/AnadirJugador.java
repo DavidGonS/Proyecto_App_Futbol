@@ -1,4 +1,4 @@
-package com.example.proyecto_app_futbol;
+package com.example.proyecto_app_futbol.admin.jugadores;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.proyecto_app_futbol.R;
 import com.example.proyecto_app_futbol.cliente.JugadorCliente;
 import com.example.proyecto_app_futbol.cliente.LigaCliente;
 import com.example.proyecto_app_futbol.model.Jugador;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.proyecto_app_futbol" >
+    package="com.example.proyecto_app_futbol">
 
     <application
         android:allowBackup="true"
@@ -8,49 +8,52 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Proyecto_App_Futbol" >
+        android:theme="@style/Theme.Proyecto_App_Futbol">
         <activity
-            android:name=".EliminarLiga"
+            android:name=".admin.ligas.ModificarLiga"
             android:exported="false" />
         <activity
-            android:name=".AnadirJugador"
+            android:name=".admin.ligas.EliminarLiga"
             android:exported="false" />
         <activity
-            android:name=".JugadoresAdministrador"
+            android:name=".admin.jugadores.AnadirJugador"
             android:exported="false" />
         <activity
-            android:name=".admin.AnadirLiga"
+            android:name=".admin.jugadores.JugadoresAdministrador"
             android:exported="false" />
         <activity
-            android:name=".LigasAdministrador"
+            android:name=".admin.ligas.AnadirLiga"
             android:exported="false" />
         <activity
-            android:name=".JugadoresLaLiga"
+            android:name=".admin.ligas.LigasAdministrador"
             android:exported="false" />
         <activity
-            android:name=".MenuAdministrador"
+            android:name=".usuario.JugadoresLaLiga"
             android:exported="false" />
         <activity
-            android:name=".MenuLaLiga"
+            android:name=".admin.MenuAdministrador"
             android:exported="false" />
         <activity
-            android:name=".MenuLigueOne"
+            android:name=".usuario.MenuLaLiga"
             android:exported="false" />
         <activity
-            android:name=".MenuPremierLeague"
+            android:name=".usuario.MenuLigueOne"
             android:exported="false" />
         <activity
-            android:name=".MenuBundesliga"
+            android:name=".usuario.MenuPremierLeague"
             android:exported="false" />
         <activity
-            android:name=".ClasificacionLaLiga"
+            android:name=".usuario.MenuBundesliga"
             android:exported="false" />
         <activity
-            android:name=".paginaprincipal.PaginaPrincipal"
+            android:name=".usuario.ClasificacionLaLiga"
             android:exported="false" />
         <activity
-            android:name=".InicioSesion"
-            android:exported="true" >
+            android:name=".usuario.PaginaPrincipal"
+            android:exported="false" />
+        <activity
+            android:name=".usuario.InicioSesion"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,7 +1,5 @@
 package com.example.proyecto_app_futbol.cliente;
 
-import android.media.audiofx.DynamicsProcessing;
-
 import com.example.proyecto_app_futbol.model.Equipo;
 
 import retrofit2.Call;

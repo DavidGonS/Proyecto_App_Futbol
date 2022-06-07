@@ -1,4 +1,4 @@
-package com.example.proyecto_app_futbol;
+package com.example.proyecto_app_futbol.usuario;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TextView;
+
+import com.example.proyecto_app_futbol.R;
 
 public class JugadoresLaLiga extends AppCompatActivity {
     private TableLayout tlJugadores;

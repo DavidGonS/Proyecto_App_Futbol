@@ -1,4 +1,4 @@
-package com.example.proyecto_app_futbol;
+package com.example.proyecto_app_futbol.usuario;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+
+import com.example.proyecto_app_futbol.R;
 
 public class MenuLaLiga extends AppCompatActivity {
     private Button btClasificacion, btEquipos, btJugadores;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#009688"
     android:onClick="administrador"
-    tools:context=".InicioSesion">
+    tools:context=".usuario.InicioSesion">
 
     <EditText
         android:id="@+id/etContrasena"

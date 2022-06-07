@@ -1,4 +1,4 @@
-package com.example.proyecto_app_futbol;
+package com.example.proyecto_app_futbol.admin.ligas;
 
 import androidx.appcompat.app.AppCompatActivity;
 

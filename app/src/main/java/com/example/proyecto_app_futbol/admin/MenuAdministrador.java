@@ -1,10 +1,14 @@
-package com.example.proyecto_app_futbol;
+package com.example.proyecto_app_futbol.admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.proyecto_app_futbol.R;
+import com.example.proyecto_app_futbol.admin.jugadores.JugadoresAdministrador;
+import com.example.proyecto_app_futbol.admin.ligas.LigasAdministrador;
 
 public class MenuAdministrador extends AppCompatActivity {
 

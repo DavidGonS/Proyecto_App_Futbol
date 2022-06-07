@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#CC2C21"
-    tools:context=".MenuBundesliga">
+    tools:context=".usuario.MenuBundesliga">
 
     <ImageView
         android:id="@+id/imagV_logoBund"

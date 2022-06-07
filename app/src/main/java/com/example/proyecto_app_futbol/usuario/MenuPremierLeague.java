@@ -1,8 +1,10 @@
-package com.example.proyecto_app_futbol;
+package com.example.proyecto_app_futbol.usuario;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.proyecto_app_futbol.R;
 
 public class MenuPremierLeague extends AppCompatActivity {
 
