@@ -1,5 +1,7 @@
 package com.example.proyecto_app_futbol.admin.jugadores;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
@@ -67,11 +69,11 @@ public class AnadirJugador extends AppCompatActivity {
         String nombre = etNombre.getText().toString();
         String apellido = etApellido.getText().toString();
         String fechaNacimiento = etFechaNacimiento.getText().toString();
-        int dorsal = Integer.parseInt(etDorsal.getText().toString());
+        int dorsal = isNumeric(etDorsal.getText().toString());
         String nacionalidad = etNacionalidad.getText().toString();
         String posicion = etPosicion.getText().toString();
-        int valorMercado = Integer.parseInt(etValorMercado.getText().toString());
-        int idEquipo = Integer.parseInt(etIdEquipo.getText().toString());
+        int valorMercado = isNumeric(etValorMercado.getText().toString());
+        int idEquipo = isNumeric(etIdEquipo.getText().toString());
 
         if (etNombre.getText().toString().isEmpty() || etApellido.getText().toString().isEmpty() ||
                 etFechaNacimiento.getText().toString().isEmpty() || etDorsal.getText().toString().isEmpty() ||
@@ -98,5 +100,19 @@ public class AnadirJugador extends AppCompatActivity {
                 }
             });
         }
+    }
+
+    // Método que verifica si lo que se introduce es un numero
+    // Cualquier int que se vaya a introducir un dato debe tener este metodo
+    public static int isNumeric(String number){
+        int result = 0;
+        try{
+            if(number != null){
+                result = Integer.parseInt(number);
+            }
+        }catch(NumberFormatException nfe){
+            Log.w(TAG, "NFException value: " + number);
+        }
+        return result;
     }
 }

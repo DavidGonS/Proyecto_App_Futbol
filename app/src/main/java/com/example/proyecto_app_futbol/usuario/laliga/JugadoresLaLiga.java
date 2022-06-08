@@ -31,7 +31,7 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 
 public class JugadoresLaLiga extends AppCompatActivity {
     private JugadorCliente jugadorCliente;
-    private TextView tvMensaje, tvNombre, tvApellido, tvFechaNacimiento;
+    private TextView tvMensaje, tvNombre, tvApellido, tvFechaNacimiento, tvPosicion, tvNacionalidad, tvDorsal;
     private ArrayAdapter adapter;
     private Window window;
 
@@ -44,7 +44,9 @@ public class JugadoresLaLiga extends AppCompatActivity {
         tvNombre = (TextView) findViewById(R.id.tvNombreJugador);
         tvApellido = (TextView) findViewById(R.id.tvApellidoJUgador);
         tvFechaNacimiento = (TextView) findViewById(R.id.tvFechaNacimiento);
-
+        tvDorsal = (TextView) findViewById(R.id.tvDorsalJugadorLista);
+        tvPosicion = (TextView) findViewById(R.id.tvPosicionJugadorLista);
+        tvNacionalidad = (TextView) findViewById(R.id.tvNacionalidadJugadorLista);
         adapter = new ArrayAdapter(this, R.layout.item_jugadores);
 
         init();
@@ -80,6 +82,9 @@ public class JugadoresLaLiga extends AppCompatActivity {
                     tvNombre.setText(jugador.getNombre());
                     tvApellido.setText(jugador.getApellido());
                     tvFechaNacimiento.setText(jugador.getFechaNacimiento());
+                    tvDorsal.setText(jugador.getDorsal());
+                    tvNacionalidad.setText(jugador.getNacionalidad());
+                    tvPosicion.setText(jugador.getPosicion());
                 }
             }
 

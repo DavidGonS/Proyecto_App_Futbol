@@ -1,10 +1,13 @@
 package com.example.proyecto_app_futbol.admin.ligas;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
@@ -53,7 +56,7 @@ public class EliminarLiga extends AppCompatActivity {
     }
 
     public void deleteLeague(View view) {
-        int idEquipo = Integer.parseInt(etIdLiga.getText().toString());
+        int idEquipo = isNumeric(etIdLiga.getText().toString());
 
         if (etIdLiga.getText().toString().isEmpty()) {
             Toast.makeText(this, "Debes rellenar el campo", Toast.LENGTH_SHORT).show();
@@ -74,5 +77,17 @@ public class EliminarLiga extends AppCompatActivity {
                 }
             });
         }
+    }
+
+    public static int isNumeric(String number){
+        int result = 0;
+        try{
+            if(number != null){
+                result = Integer.parseInt(number);
+            }
+        }catch(NumberFormatException nfe){
+            Log.w(TAG, "NFException value: " + number);
+        }
+        return result;
     }
 }

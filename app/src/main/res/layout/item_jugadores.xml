@@ -27,5 +27,26 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvDorsal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvNacionalidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvPosicionJugador"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
     </TableRow>
 </androidx.constraintlayout.widget.ConstraintLayout>
