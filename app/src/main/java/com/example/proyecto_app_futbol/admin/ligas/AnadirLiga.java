@@ -2,9 +2,12 @@ package com.example.proyecto_app_futbol.admin.ligas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +26,7 @@ public class AnadirLiga extends AppCompatActivity {
     private LigaCliente ligaCliente;
     private EditText etNombre, etPais;
     private TextView tvMensaje;
+    private Window window;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +37,14 @@ public class AnadirLiga extends AppCompatActivity {
         etPais = (EditText) findViewById(R.id.etPaisLiga);
         tvMensaje = (TextView) findViewById(R.id.tvMensaje);
 
+        init();
         initRetrofit();
+    }
+
+    public void init(){
+        this.window = getWindow();
+        window.setStatusBarColor(Color.parseColor("#3F51B5"));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
     }
 
     public void initRetrofit() {

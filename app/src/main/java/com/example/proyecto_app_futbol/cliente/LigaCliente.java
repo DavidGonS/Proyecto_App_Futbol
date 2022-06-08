@@ -8,6 +8,7 @@ import retrofit2.http.DELETE;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface LigaCliente {
 
@@ -18,7 +19,7 @@ public interface LigaCliente {
 
     @DELETE("/ligas/{idLiga}")
     Call<Void> deleteLeague(
-            @Path("idLiga") int idLiga
+            @Query("idLiga") int idLiga
     );
 
     @PUT("/ligas/{idLiga}")

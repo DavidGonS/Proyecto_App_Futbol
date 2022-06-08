@@ -11,6 +11,7 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface JugadorCliente {
 
@@ -25,7 +26,7 @@ public interface JugadorCliente {
 
     @DELETE("/jugadores/{idJugador}")
     Call<Void> deletePlayer(
-            @Path("idJugador") int idJugador
+            @Query("idJugador") int idJugador
     );
 
     @PUT("/jugadores/{idJugador}")
