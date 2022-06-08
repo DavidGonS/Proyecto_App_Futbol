@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto_App_Futbol">
         <activity
+            android:name=".usuario.laliga.PartidosLaLiga"
+            android:exported="false" />
+        <activity
+            android:name=".EquiposLaLiga"
+            android:exported="false" />
+        <activity
             android:name=".admin.ligas.ModificarLiga"
             android:exported="false" />
         <activity
@@ -28,25 +34,25 @@
             android:name=".admin.ligas.LigasAdministrador"
             android:exported="false" />
         <activity
-            android:name=".usuario.JugadoresLaLiga"
+            android:name=".usuario.laliga.JugadoresLaLiga"
             android:exported="false" />
         <activity
             android:name=".admin.MenuAdministrador"
             android:exported="false" />
         <activity
-            android:name=".usuario.MenuLaLiga"
+            android:name=".usuario.menus.MenuLaLiga"
             android:exported="false" />
         <activity
-            android:name=".usuario.MenuLigueOne"
+            android:name=".usuario.menus.MenuLigueOne"
             android:exported="false" />
         <activity
-            android:name=".usuario.MenuPremierLeague"
+            android:name=".usuario.menus.MenuPremierLeague"
             android:exported="false" />
         <activity
-            android:name=".usuario.MenuBundesliga"
+            android:name=".usuario.menus.MenuBundesliga"
             android:exported="false" />
         <activity
-            android:name=".usuario.ClasificacionLaLiga"
+            android:name=".usuario.laliga.ClasificacionLaLiga"
             android:exported="false" />
         <activity
             android:name=".usuario.PaginaPrincipal"

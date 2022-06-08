@@ -11,6 +11,10 @@ import android.view.Window;
 import android.widget.ImageButton;
 
 import com.example.proyecto_app_futbol.R;
+import com.example.proyecto_app_futbol.usuario.menus.MenuBundesliga;
+import com.example.proyecto_app_futbol.usuario.menus.MenuLaLiga;
+import com.example.proyecto_app_futbol.usuario.menus.MenuLigueOne;
+import com.example.proyecto_app_futbol.usuario.menus.MenuPremierLeague;
 
 public class PaginaPrincipal extends AppCompatActivity {
     private ImageButton ibLaLiga, ibBundesliga, ibPremier, ibLigueOne;

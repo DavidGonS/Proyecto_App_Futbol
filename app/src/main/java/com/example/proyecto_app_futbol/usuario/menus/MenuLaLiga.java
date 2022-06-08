@@ -1,4 +1,4 @@
-package com.example.proyecto_app_futbol.usuario;
+package com.example.proyecto_app_futbol.usuario.menus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,10 +10,13 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
+import com.example.proyecto_app_futbol.usuario.laliga.PartidosLaLiga;
 import com.example.proyecto_app_futbol.R;
+import com.example.proyecto_app_futbol.usuario.laliga.ClasificacionLaLiga;
+import com.example.proyecto_app_futbol.usuario.laliga.JugadoresLaLiga;
 
 public class MenuLaLiga extends AppCompatActivity {
-    private Button btClasificacion, btEquipos, btJugadores;
+    private Button btClasificacion, btPartidos, btJugadores;
     private Window window;
 
     @Override
@@ -24,20 +27,33 @@ public class MenuLaLiga extends AppCompatActivity {
         this.setTitle(R.string.tituloMenuLaLiga);
         init();
         goToClasification();
+        goToMatches();
     }
 
     public void init(){
         btClasificacion = (Button) findViewById(R.id.btClasificacion);
         btJugadores = (Button) findViewById(R.id.btJugadores);
+        btPartidos = (Button) findViewById(R.id.btPartidos);
 
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#4CAF50"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4CAF50")));
     }
 
-    public void jugadores(View view) {
+    public void goToPlayers(View view) {
         Intent intent = new Intent(this, JugadoresLaLiga.class);
         startActivity(intent);
+    }
+
+    public void goToMatches() {
+        btPartidos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuLaLiga.this, PartidosLaLiga.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void goToClasification(){
@@ -48,6 +64,7 @@ public class MenuLaLiga extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
     }
 }

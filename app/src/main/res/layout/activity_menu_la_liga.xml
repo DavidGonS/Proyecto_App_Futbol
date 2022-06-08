@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#009688"
-    tools:context=".usuario.MenuLaLiga">
+    tools:context=".usuario.menus.MenuLaLiga">
 
     <ImageView
         android:id="@+id/imagV_liga"
@@ -59,7 +59,7 @@
                 android:layout_height="70dp"
                 android:layout_weight=".25"
                 android:backgroundTint="#4CAF50"
-                android:onClick="jugadores"
+                android:onClick="goToPlayers"
                 android:text="@string/buttLg_jug"
                 tools:ignore="TextContrastCheck" />
         </TableRow>

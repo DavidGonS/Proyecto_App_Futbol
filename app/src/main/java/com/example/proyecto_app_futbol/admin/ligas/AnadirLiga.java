@@ -65,7 +65,7 @@ public class AnadirLiga extends AppCompatActivity {
 
                 @Override
                 public void onFailure(Call<Void> call, Throwable t) {
-                    Log.e("MainActivity", t.getMessage(), t);
+                    tvMensaje.setText(t.getMessage());
                 }
             });
         }
