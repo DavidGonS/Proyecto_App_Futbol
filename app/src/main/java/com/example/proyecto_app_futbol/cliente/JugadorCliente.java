@@ -24,6 +24,11 @@ public interface JugadorCliente {
     @GET("/jugadores")
     Call<List<Jugador>> getAllPlayers();
 
+    @GET("/jugadores/{idJugador}")
+    Call<Jugador> getPlayerById(
+            @Path("idJugador") int id
+    );
+
     @DELETE("/jugadores/{idJugador}")
     Call<Void> deletePlayer(
             @Query("idJugador") int idJugador

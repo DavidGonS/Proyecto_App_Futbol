@@ -19,9 +19,6 @@
             android:name=".usuario.laliga.PartidosLaLiga"
             android:exported="false" />
         <activity
-            android:name=".EquiposLaLiga"
-            android:exported="false" />
-        <activity
             android:name=".admin.ligas.ModificarLiga"
             android:exported="false" />
         <activity

@@ -33,6 +33,7 @@ public class EliminarJugador extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eliminar_jugador);
+        this.setTitle("Eliminar");
 
         etIdJugador = (EditText) findViewById(R.id.etIdJugador);
         tvMensaje = (TextView) findViewById(R.id.tvMensjaeEliminarJugador);
