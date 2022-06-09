@@ -16,6 +16,7 @@ public class PartidosLaLiga extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_partidos_la_liga);
+        this.setTitle("Partidos");
         init();
     }
     public void init(){

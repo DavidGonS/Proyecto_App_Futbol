@@ -36,6 +36,7 @@ public class AnadirJugador extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anadir_jugador);
+        this.setTitle("Añadir");
 
         etNombre = (EditText) findViewById(R.id.etNombreAnadirJugador);
         etApellido = (EditText) findViewById(R.id.etApellidoAnadirJugador);

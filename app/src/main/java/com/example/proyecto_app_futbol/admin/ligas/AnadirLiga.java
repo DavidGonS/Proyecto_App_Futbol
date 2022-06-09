@@ -32,6 +32,7 @@ public class AnadirLiga extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anadir_liga);
+        this.setTitle("Añadir");
 
         etNombre = (EditText) findViewById(R.id.etNombreLiga);
         etPais = (EditText) findViewById(R.id.etPaisLiga);

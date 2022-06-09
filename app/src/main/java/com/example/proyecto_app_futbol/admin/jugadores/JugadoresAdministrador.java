@@ -18,11 +18,22 @@ public class JugadoresAdministrador extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jugadores_administrador);
+        this.setTitle("Jugadores");
         init();
     }
 
     public void goToAdd(View view) {
         Intent intent = new Intent(this, AnadirJugador.class);
+        startActivity(intent);
+    }
+
+    public void goToUpdate(View view) {
+        Intent intent = new Intent(this, ModificarJugador.class);
+        startActivity(intent);
+    }
+
+    public void goToDelete(View view) {
+        Intent intent = new Intent(this, EliminarJugador.class);
         startActivity(intent);
     }
 

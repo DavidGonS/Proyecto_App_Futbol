@@ -39,6 +39,7 @@ public class JugadoresLaLiga extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jugadores_la_liga);
+        this.setTitle("Jugadores");
 
         tvMensaje = (TextView) findViewById(R.id.tvMensajeJugadoresLaLiga);
         tvNombre = (TextView) findViewById(R.id.tvNombreJugador);

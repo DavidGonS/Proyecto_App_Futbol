@@ -16,6 +16,7 @@ public class ModificarLiga extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar_liga);
+        this.setTitle("Modificar");
 
         init();
     }
