@@ -35,11 +35,8 @@
                 android:id="@+id/tvNombreAñadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre:" />
-
-            <Space
-                android:layout_width="50dp"
-                android:layout_height="wrap_content" />
+                android:text="Nombre:"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etNombreAnadirJugador"
@@ -57,11 +54,8 @@
                 android:id="@+id/tvApellidoAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apellido:" />
-
-            <Space
-                android:layout_width="50dp"
-                android:layout_height="wrap_content" />
+                android:text="Apellido:"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etApellidoAnadirJugador"
@@ -79,11 +73,8 @@
                 android:id="@+id/tvFechaNacimientoAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fecha Nacimiento:" />
-
-            <Space
-                android:layout_width="50dp"
-                android:layout_height="wrap_content" />
+                android:text="Fecha Nacimiento:"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etFechaNacimientoAnadirJugador"
@@ -101,11 +92,8 @@
                 android:id="@+id/tvDorsalAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dorsal:" />
-
-            <Space
-                android:layout_width="50dp"
-                android:layout_height="wrap_content" />
+                android:text="Dorsal:"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etDorsalAnadirJugador"
@@ -123,11 +111,8 @@
                 android:id="@+id/tvNacionalidadAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nacionalidad:" />
-
-            <Space
-                android:layout_width="50dp"
-                android:layout_height="wrap_content" />
+                android:text="Nacionalidad:"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etNacionalidadAnadirJugador"
@@ -145,11 +130,8 @@
                 android:id="@+id/tvPosicionAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Posición:" />
-
-            <Space
-                android:layout_width="50dp"
-                android:layout_height="wrap_content" />
+                android:text="Posición:"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etPosicionAnadirJugador"
@@ -167,11 +149,8 @@
                 android:id="@+id/tvValorMercadoAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Valor Mercado:" />
-
-            <Space
-                android:layout_width="50dp"
-                android:layout_height="wrap_content" />
+                android:text="Valor Mercado:"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etValorMercadoAnadirJugador"
@@ -189,11 +168,8 @@
                 android:id="@+id/tvIdEquipoAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID Equipo:" />
-
-            <Space
-                android:layout_width="50dp"
-                android:layout_height="wrap_content" />
+                android:text="ID Equipo:"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etIdEquipoAnadirJugador"

@@ -11,9 +11,10 @@ import retrofit2.http.Path;
 
 public interface EquipoCliente {
 
-    @POST("/equipos")
-    Call<Void> createTeam(
-            @Body Equipo equipo
+    @POST("/equipos/{idLiga}/ligas")
+    Call<Void> createTeamInLeague(
+            @Body Equipo equipo,
+            @Path("idLiga") int idLiga
     );
 
     @DELETE("/equipos/{idEquipo}")

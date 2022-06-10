@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto_App_Futbol">
         <activity
+            android:name=".admin.equipos.AnadirEquipo"
+            android:exported="false" />
+        <activity
+            android:name=".admin.equipos.MenuEquiposAdministrador"
+            android:exported="false" />
+        <activity
             android:name=".admin.jugadores.EliminarJugador"
             android:exported="false" />
         <activity

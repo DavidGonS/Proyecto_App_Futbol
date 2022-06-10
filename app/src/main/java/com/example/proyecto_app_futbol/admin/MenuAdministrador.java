@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 
+import com.example.proyecto_app_futbol.admin.equipos.MenuEquiposAdministrador;
 import com.example.proyecto_app_futbol.R;
 import com.example.proyecto_app_futbol.admin.jugadores.JugadoresAdministrador;
 import com.example.proyecto_app_futbol.admin.ligas.LigasAdministrador;
@@ -37,6 +38,11 @@ public class MenuAdministrador extends AppCompatActivity {
 
     public void goToPlayers(View view) {
         Intent intent = new Intent(this, JugadoresAdministrador.class);
+        startActivity(intent);
+    }
+
+    public void goToTeams(View view) {
+        Intent intent = new Intent(this, MenuEquiposAdministrador.class);
         startActivity(intent);
     }
 }

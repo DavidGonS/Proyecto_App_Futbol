@@ -1,4 +1,4 @@
-package com.example.proyecto_app_futbol.admin.ligas;
+package com.example.proyecto_app_futbol.admin.equipos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,14 +11,13 @@ import android.view.Window;
 
 import com.example.proyecto_app_futbol.R;
 
-public class LigasAdministrador extends AppCompatActivity {
+public class MenuEquiposAdministrador extends AppCompatActivity {
     private Window window;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ligas_administrador);
-        this.setTitle("Menu Ligas");
+        setContentView(R.layout.activity_menu_equipos_administrador);
 
         init();
     }
@@ -27,20 +26,11 @@ public class LigasAdministrador extends AppCompatActivity {
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#3F51B5"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
+        this.setTitle("Menu Equipos");
     }
 
     public void goToAdd(View view) {
-        Intent intent = new Intent(this, AnadirLiga.class);
-        startActivity(intent);
-    }
-
-    public void goToDelete(View view) {
-        Intent intent = new Intent(this, EliminarLiga.class);
-        startActivity(intent);
-    }
-
-    public void goToUpdate(View view) {
-        Intent intent = new Intent(this, ModificarLiga.class);
+        Intent intent = new Intent(this, AnadirEquipo.class);
         startActivity(intent);
     }
 }

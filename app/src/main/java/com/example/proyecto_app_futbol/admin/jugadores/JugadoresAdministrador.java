@@ -18,7 +18,7 @@ public class JugadoresAdministrador extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jugadores_administrador);
-        this.setTitle("Jugadores");
+        this.setTitle("Menu Jugadores");
         init();
     }
 
