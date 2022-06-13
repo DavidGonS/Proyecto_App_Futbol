@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00BCD4"
     tools:context=".admin.equipos.EliminarEquipo">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginTop="52dp"
-        android:text="ELIMINAR EQUIPO"
+        android:text="@string/eliminar_equipo"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="61dp"
         android:layout_marginTop="131dp"
-        android:text="ID Equipo:"
+        android:text="@string/id_equipo"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,7 +39,8 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/textView26"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloEliminarEquipo" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloEliminarEquipo"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btEliminarEquipo"
@@ -46,7 +48,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
         android:layout_marginTop="55dp"
-        android:text="ELIMINAR"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/eliminar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etIdEquipoEliminar" />
+
+    <TextView
+        android:id="@+id/tvMensajeEliminarEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEliminarEquipo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

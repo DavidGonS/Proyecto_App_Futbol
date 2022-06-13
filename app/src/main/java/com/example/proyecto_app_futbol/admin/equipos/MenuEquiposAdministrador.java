@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 
 import com.example.proyecto_app_futbol.R;
+import com.example.proyecto_app_futbol.admin.jugadores.EliminarJugador;
 
 public class MenuEquiposAdministrador extends AppCompatActivity {
     private Window window;
@@ -31,6 +32,16 @@ public class MenuEquiposAdministrador extends AppCompatActivity {
 
     public void goToAdd(View view) {
         Intent intent = new Intent(this, AnadirEquipo.class);
+        startActivity(intent);
+    }
+
+    public void goToUpdate(View view) {
+        Intent intent = new Intent(this, ModificarEquipo.class);
+        startActivity(intent);
+    }
+
+    public void goToDelete(View view) {
+        Intent intent = new Intent(this, EliminarEquipo.class);
         startActivity(intent);
     }
 }

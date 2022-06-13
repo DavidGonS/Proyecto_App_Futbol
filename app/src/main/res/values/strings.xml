@@ -74,4 +74,7 @@
     <string name="id_jugador">ID Jugador:</string>
     <string name="eliminar_liga">ELIMINAR LIGA</string>
     <string name="modificar_jugador">MODIFICAR JUGADOR</string>
+    <string name="eliminar_equipo">ELIMINAR EQUIPO</string>
+    <string name="equipos_titulo">EQUIPOS</string>
+    <string name="modificar_equipo">MODIFICAR EQUIPO</string>
 </resources>
