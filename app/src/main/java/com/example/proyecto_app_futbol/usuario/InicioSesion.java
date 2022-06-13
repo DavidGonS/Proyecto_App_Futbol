@@ -13,10 +13,9 @@ import android.widget.EditText;
 
 import com.example.proyecto_app_futbol.admin.MenuAdministrador;
 import com.example.proyecto_app_futbol.R;
+import com.example.proyecto_app_futbol.usuario.menus.MenuLigas;
 
 public class InicioSesion extends AppCompatActivity {
-    private EditText etEmail, etContrasena;
-    private Button btIniciar;
     private Window window;
 
 
@@ -37,7 +36,7 @@ public class InicioSesion extends AppCompatActivity {
     }
 
     public void iniciarSesion(View view){
-        Intent intent = new Intent(this, PaginaPrincipal.class);
+        Intent intent = new Intent(this, MenuLigas.class);
         startActivity(intent);
     }
 

@@ -70,7 +70,7 @@
             android:name=".usuario.laliga.ClasificacionLaLiga"
             android:exported="false" />
         <activity
-            android:name=".usuario.PaginaPrincipal"
+            android:name=".usuario.menus.MenuLigas"
             android:exported="false" />
         <activity
             android:name=".usuario.InicioSesion"

@@ -36,9 +36,6 @@ public class EliminarEquipo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eliminar_equipo);
 
-        etIdEquipo = (EditText) findViewById(R.id.etIdEquipoEliminar);
-        tvMensaje = (TextView) findViewById(R.id.tvMensajeEliminarEquipo);
-
         init();
         initRetrofit();
     }
@@ -47,6 +44,11 @@ public class EliminarEquipo extends AppCompatActivity {
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#3F51B5"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
+
+        this.setTitle("Eliminar");
+
+        etIdEquipo = (EditText) findViewById(R.id.etIdEquipoEliminar);
+        tvMensaje = (TextView) findViewById(R.id.tvMensajeEliminarEquipo);
     }
 
     public void initRetrofit() {

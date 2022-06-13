@@ -35,6 +35,7 @@
                 android:layout_height="70dp"
                 android:layout_weight=".25"
                 android:backgroundTint="#4CAF50"
+                android:onClick="goToClasification"
                 android:text="@string/buttLg_clasif"
                 tools:ignore="TextContrastCheck" />
 
@@ -83,6 +84,7 @@
                 android:layout_height="70dp"
                 android:layout_weight=".25"
                 android:backgroundTint="#4CAF50"
+                android:onClick="goToMatches"
                 android:text="@string/buttLg_part"
                 tools:ignore="TextContrastCheck" />
         </TableRow>

@@ -1,4 +1,4 @@
-package com.example.proyecto_app_futbol.usuario;
+package com.example.proyecto_app_futbol.usuario.menus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,13 +16,12 @@ import com.example.proyecto_app_futbol.usuario.menus.MenuLaLiga;
 import com.example.proyecto_app_futbol.usuario.menus.MenuLigueOne;
 import com.example.proyecto_app_futbol.usuario.menus.MenuPremierLeague;
 
-public class PaginaPrincipal extends AppCompatActivity {
-    private ImageButton ibLaLiga, ibBundesliga, ibPremier, ibLigueOne;
+public class MenuLigas extends AppCompatActivity {
     private Window window;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pagina_principal);
+        setContentView(R.layout.activity_menu_ligas);
 
         this.setTitle(R.string.tituloMenuPrincipal);
 
@@ -31,11 +30,6 @@ public class PaginaPrincipal extends AppCompatActivity {
     }
 
     public void init() {
-        ibLaLiga = (ImageButton) findViewById(R.id.ibLaLiga);
-        ibBundesliga = (ImageButton) findViewById(R.id.ibBundesliga);
-        ibPremier = (ImageButton) findViewById(R.id.ibPremier);
-        ibLigueOne = (ImageButton) findViewById(R.id.ibLigue1);
-
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#4CAF50"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4CAF50")));

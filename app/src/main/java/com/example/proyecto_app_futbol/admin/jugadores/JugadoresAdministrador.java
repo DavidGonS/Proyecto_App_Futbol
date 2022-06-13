@@ -18,7 +18,6 @@ public class JugadoresAdministrador extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jugadores_administrador);
-        this.setTitle("Menu Jugadores");
         init();
     }
 
@@ -41,5 +40,7 @@ public class JugadoresAdministrador extends AppCompatActivity {
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#3F51B5"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
+
+        this.setTitle("Menu Jugadores");
     }
 }

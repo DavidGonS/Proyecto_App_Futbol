@@ -36,13 +36,6 @@ public class ModificarEquipo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar_equipo);
-        this.setTitle("Modificar equipo");
-
-        etIdEquipo = (EditText) findViewById(R.id.etIdEquipoModificar);
-        etNombre = (EditText) findViewById(R.id.etNombreEquipoModificar);
-        etEstadio = (EditText) findViewById(R.id.etEstadioModificar);
-        etPuntuacion = (EditText) findViewById(R.id.etPuntuacionModificar);
-        tvMensaje = (TextView) findViewById(R.id.tvMensajeModificarEquipo);
 
         init();
         initRetrofit();
@@ -52,6 +45,14 @@ public class ModificarEquipo extends AppCompatActivity {
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#3F51B5"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
+
+        this.setTitle("Modificar equipo");
+
+        etIdEquipo = (EditText) findViewById(R.id.etIdEquipoModificar);
+        etNombre = (EditText) findViewById(R.id.etNombreEquipoModificar);
+        etEstadio = (EditText) findViewById(R.id.etEstadioModificar);
+        etPuntuacion = (EditText) findViewById(R.id.etPuntuacionModificar);
+        tvMensaje = (TextView) findViewById(R.id.tvMensajeModificarEquipo);
     }
 
     public void initRetrofit() {

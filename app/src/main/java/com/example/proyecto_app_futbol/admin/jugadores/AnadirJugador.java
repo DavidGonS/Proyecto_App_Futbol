@@ -36,6 +36,16 @@ public class AnadirJugador extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anadir_jugador);
+
+        init();
+        initRetrofit();
+    }
+
+    public void init(){
+        this.window = getWindow();
+        window.setStatusBarColor(Color.parseColor("#3F51B5"));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
+
         this.setTitle("Añadir");
 
         etNombre = (EditText) findViewById(R.id.etNombreAnadirJugador);
@@ -47,15 +57,6 @@ public class AnadirJugador extends AppCompatActivity {
         etValorMercado = (EditText) findViewById(R.id.etValorMercadoAnadirJugador);
         etIdEquipo = (EditText) findViewById(R.id.etIdEquipoAnadirJugador);
         tvMensaje = (TextView) findViewById(R.id.tvMensajeAnadirJugador);
-
-        init();
-        initRetrofit();
-    }
-
-    public void init(){
-        this.window = getWindow();
-        window.setStatusBarColor(Color.parseColor("#3F51B5"));
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
     }
 
     public void initRetrofit() {

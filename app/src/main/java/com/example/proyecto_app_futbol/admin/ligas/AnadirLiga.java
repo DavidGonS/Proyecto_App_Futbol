@@ -32,11 +32,7 @@ public class AnadirLiga extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anadir_liga);
-        this.setTitle("Añadir");
 
-        etNombre = (EditText) findViewById(R.id.etNombreLiga);
-        etPais = (EditText) findViewById(R.id.etPaisLiga);
-        tvMensaje = (TextView) findViewById(R.id.tvMensaje);
 
         init();
         initRetrofit();
@@ -46,6 +42,12 @@ public class AnadirLiga extends AppCompatActivity {
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#3F51B5"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
+
+        this.setTitle("Añadir");
+
+        etNombre = (EditText) findViewById(R.id.etNombreLiga);
+        etPais = (EditText) findViewById(R.id.etPaisLiga);
+        tvMensaje = (TextView) findViewById(R.id.tvMensaje);
     }
 
     public void initRetrofit() {

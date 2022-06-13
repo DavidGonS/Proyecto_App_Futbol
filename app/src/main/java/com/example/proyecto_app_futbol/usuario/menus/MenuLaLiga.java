@@ -26,8 +26,6 @@ public class MenuLaLiga extends AppCompatActivity {
 
         this.setTitle(R.string.tituloMenuLaLiga);
         init();
-        goToClasification();
-        goToMatches();
     }
 
     public void init(){
@@ -45,26 +43,13 @@ public class MenuLaLiga extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToMatches() {
-        btPartidos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuLaLiga.this, PartidosLaLiga.class);
-                startActivity(intent);
-            }
-        });
-
+    public void goToMatches(View view) {
+        Intent intent = new Intent(this, PartidosLaLiga.class);
+        startActivity(intent);
     }
 
-    public void goToClasification(){
-        btClasificacion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuLaLiga.this, ClasificacionLaLiga.class);
-                startActivity(intent);
-            }
-        });
-
-
+    public void goToClasification(View view) {
+        Intent intent = new Intent(this, ClasificacionLaLiga.class);
+        startActivity(intent);
     }
 }

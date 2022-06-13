@@ -37,6 +37,16 @@ public class ModificarJugador extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar_jugador);
+
+        init();
+        initRetrofit();
+    }
+
+    public void init(){
+        this.window = getWindow();
+        window.setStatusBarColor(Color.parseColor("#3F51B5"));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
+
         this.setTitle("Modificar");
 
         etIdJugador = (EditText) findViewById(R.id.etIdJugadorModificar);
@@ -49,15 +59,6 @@ public class ModificarJugador extends AppCompatActivity {
         etValorMercado = (EditText) findViewById(R.id.etValorModificarJugador);
         etIdEquipo = (EditText) findViewById(R.id.etIdEquipoModificarJugador);
         tvMensaje = (TextView) findViewById(R.id.tvMensajeModificarJugador);
-
-        init();
-        initRetrofit();
-    }
-
-    public void init(){
-        this.window = getWindow();
-        window.setStatusBarColor(Color.parseColor("#3F51B5"));
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
     }
 
     public void initRetrofit() {

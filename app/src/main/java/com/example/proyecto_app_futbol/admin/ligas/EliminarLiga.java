@@ -33,10 +33,6 @@ public class EliminarLiga extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eliminar_liga);
-        this.setTitle("Eliminar");
-
-        etIdLiga = (EditText) findViewById(R.id.etIdLiga);
-        tvMensaje = (TextView) findViewById(R.id.tvMensajeEliminarLiga);
 
         init();
         initRetrofit();
@@ -46,6 +42,11 @@ public class EliminarLiga extends AppCompatActivity {
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#3F51B5"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
+
+        this.setTitle("Eliminar");
+
+        etIdLiga = (EditText) findViewById(R.id.etIdLiga);
+        tvMensaje = (TextView) findViewById(R.id.tvMensajeEliminarLiga);
     }
 
     public void initRetrofit() {

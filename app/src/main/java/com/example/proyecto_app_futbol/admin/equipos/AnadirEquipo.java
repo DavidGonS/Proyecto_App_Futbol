@@ -36,12 +36,6 @@ public class AnadirEquipo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anadir_equipo);
 
-        etNombre = (EditText) findViewById(R.id.etNombreEquipoAnadir);
-        etEstadio = (EditText) findViewById(R.id.etEstadioEquipoAnadir);
-        etPuntuacion = (EditText) findViewById(R.id.etPuntuacionEquipoAnadir);
-        etIdLiga = (EditText) findViewById(R.id.etIdLigaEquipoAnadir);
-        tvMensaje = (TextView) findViewById(R.id.tvMensajeAnadirEquipo);
-
         init();
         initRetrofit();
     }
@@ -50,7 +44,14 @@ public class AnadirEquipo extends AppCompatActivity {
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#3F51B5"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
+
         this.setTitle("Añadir");
+
+        etNombre = (EditText) findViewById(R.id.etNombreEquipoAnadir);
+        etEstadio = (EditText) findViewById(R.id.etEstadioEquipoAnadir);
+        etPuntuacion = (EditText) findViewById(R.id.etPuntuacionEquipoAnadir);
+        etIdLiga = (EditText) findViewById(R.id.etIdLigaEquipoAnadir);
+        tvMensaje = (TextView) findViewById(R.id.tvMensajeAnadirEquipo);
     }
 
     public void initRetrofit() {
