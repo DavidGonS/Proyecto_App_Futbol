@@ -8,7 +8,7 @@
     tools:context=".admin.equipos.MenuEquiposAdministrador">
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tvTituloMenuEquiposAdministrador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btAnadirEquipoMenuEquiposAdmin"
         android:layout_width="118dp"
         android:layout_height="50dp"
         android:layout_marginStart="146dp"
@@ -29,10 +29,10 @@
         android:onClick="goToAdd"
         android:text="@string/a_adir"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloMenuEquiposAdministrador" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btModificarEquipoMenuEquiposAdmin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="146dp"
@@ -41,10 +41,10 @@
         android:onClick="goToUpdate"
         android:text="@string/modificar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btAnadirEquipoMenuEquiposAdmin" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btEliminarEquipoMenuEquiposAdmin"
         android:layout_width="118dp"
         android:layout_height="45dp"
         android:layout_marginStart="146dp"
@@ -53,6 +53,6 @@
         android:onClick="goToDelete"
         android:text="@string/eliminar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/btModificarEquipoMenuEquiposAdmin"
         tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

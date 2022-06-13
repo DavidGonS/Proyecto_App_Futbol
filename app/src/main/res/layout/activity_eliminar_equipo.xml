@@ -59,7 +59,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="174dp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btEliminarEquipo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

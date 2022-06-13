@@ -67,7 +67,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tvPartidosJugados"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".25"
@@ -77,7 +77,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/tvPartidosGanados"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".25"
@@ -87,7 +87,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/tvPartidosEmpatados"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".25"
@@ -97,7 +97,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/tvPartidosPerdidos"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".25"
@@ -107,7 +107,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/tvGolesAFavor"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".25"
@@ -117,7 +117,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/tvGolesEnContra"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight=".25"
