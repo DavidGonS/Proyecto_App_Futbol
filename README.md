@@ -6,11 +6,29 @@
     - Liga:
         - Clasificacion
         - Partidos
-        - Estadisticas
-    - Equipo:
         - Jugadores
+    - Clasificacion:
+        - Posicion
+        - Nombre
+        - Partidos jugados
+        - Partidos empatados
+        - Partidos perdidos
+        - Goles a favor
+        - Goles en contra   
     - Jugadores:
-        - Informacion
+        - Nombre
+        - Apellido
+        - Fecha nacimiento
+        - Dorsal
+        - Nacionalidad
+        - Posicion
+        - Valor mercado
+    - Partidos:
+        - Numero jornada
+        - Fecha 
+        - Resultado
+        - Equipo local
+        - Equipo visitante
 
 2. Parte Administrador (API Rest):
     - Menu Administrador: Debe permitir añadir, modificar y eliminar los siguientes puntos: 
