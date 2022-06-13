@@ -36,17 +36,11 @@ public class PaginaPrincipal extends AppCompatActivity {
         ibPremier = (ImageButton) findViewById(R.id.ibPremier);
         ibLigueOne = (ImageButton) findViewById(R.id.ibLigue1);
 
-        ibLigueOne.setBackgroundDrawable(null);
-        ibLaLiga.setBackgroundDrawable(null);
-        ibBundesliga.setBackgroundDrawable(null);
-        ibPremier.setBackgroundDrawable(null);
-
         this.window = getWindow();
         window.setStatusBarColor(Color.parseColor("#4CAF50"));
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#4CAF50")));
     }
 
-    // No se porque pero si meto una actividad en un paquete no la abre pero si esta fuera si
     public void changePremierLeague(View view) {
         Intent intent = new Intent(this, MenuPremierLeague.class);
         startActivity(intent);

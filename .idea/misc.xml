@@ -19,6 +19,7 @@
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_anadir_jugador.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_anadir_liga.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_clasificacion_la_liga.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_eliminar_equipo.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_eliminar_jugador.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_eliminar_liga.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_equipos_la_liga.xml" value="0.36666666666666664" />
@@ -33,8 +34,10 @@
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_menu_la_liga.xml" value="0.358695652173913" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_menu_ligue_one.xml" value="0.358695652173913" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_menu_premier_league.xml" value="0.33" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_modificar_equipo.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_modificar_jugador.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_modificar_liga.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_pagina_principal.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_pantalla_administrador.xml" value="0.33" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/activity_partidos_la_liga.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/david.gonzalez/StudioProjects/Proyecto_App_Futbol1/app/src/main/res/layout/item_clasificacion.xml" value="0.36666666666666664" />

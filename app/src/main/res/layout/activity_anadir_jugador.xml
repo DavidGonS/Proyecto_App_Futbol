@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginTop="52dp"
-        android:text="AÑADIR JUGADOR"
+        android:text="@string/anadir_jugador_titulo"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
                 android:id="@+id/tvNombreAñadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre:"
+                android:text="@string/nombreFormulario"
                 android:textStyle="bold" />
 
             <EditText
@@ -43,7 +43,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -54,7 +55,7 @@
                 android:id="@+id/tvApellidoAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apellido:"
+                android:text="@string/apellido"
                 android:textStyle="bold" />
 
             <EditText
@@ -62,7 +63,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -73,7 +75,7 @@
                 android:id="@+id/tvFechaNacimientoAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fecha Nacimiento:"
+                android:text="@string/fecha_nacimiento"
                 android:textStyle="bold" />
 
             <EditText
@@ -81,7 +83,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -92,7 +95,7 @@
                 android:id="@+id/tvDorsalAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dorsal:"
+                android:text="@string/dorsal_formulario"
                 android:textStyle="bold" />
 
             <EditText
@@ -100,7 +103,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="number"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -111,7 +115,7 @@
                 android:id="@+id/tvNacionalidadAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nacionalidad:"
+                android:text="@string/nacionalidad"
                 android:textStyle="bold" />
 
             <EditText
@@ -119,7 +123,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -130,7 +135,7 @@
                 android:id="@+id/tvPosicionAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Posición:"
+                android:text="@string/posicion_formulario"
                 android:textStyle="bold" />
 
             <EditText
@@ -138,7 +143,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -149,7 +155,7 @@
                 android:id="@+id/tvValorMercadoAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Valor Mercado:"
+                android:text="@string/valor_mercado"
                 android:textStyle="bold" />
 
             <EditText
@@ -157,7 +163,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="number"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -168,7 +175,7 @@
                 android:id="@+id/tvIdEquipoAnadirJugador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID Equipo:"
+                android:text="@string/id_equipo"
                 android:textStyle="bold" />
 
             <EditText
@@ -176,7 +183,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -203,7 +211,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#3F51B5"
                 android:onClick="createPlayerInTeam"
-                android:text="AÑADIR" />
+                android:text="@string/a_adir" />
         </TableRow>
     </TableLayout>
 

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="121dp"
         android:layout_marginTop="48dp"
-        android:text="ELIMINAR LIGA"
+        android:text="@string/eliminar_liga"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="53dp"
         android:layout_marginTop="150dp"
-        android:text="ID Liga:"
+        android:text="@string/id_liga"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,7 +39,8 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/tvIdLiga"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloEliminarLiga" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloEliminarLiga"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btEliminar"
@@ -49,7 +50,7 @@
         android:layout_marginTop="99dp"
         android:backgroundTint="#3F51B5"
         android:onClick="deleteLeague"
-        android:text="ELIMINAR"
+        android:text="@string/eliminar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etIdLiga" />
 

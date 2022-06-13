@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
         android:layout_marginTop="46dp"
-        android:text="ELIMINAR JUGADOR"
+        android:text="@string/eliminar_jugador"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,8 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView2"
@@ -36,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="49dp"
         android:layout_marginTop="110dp"
-        android:text="ID Jugador:"
+        android:text="@string/id_jugador"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -49,7 +50,7 @@
         android:layout_marginTop="77dp"
         android:backgroundTint="#3F51B5"
         android:onClick="deletePlayer"
-        android:text="ELIMINAR"
+        android:text="@string/eliminar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etIdJugador" />
 
@@ -59,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="173dp"
         android:layout_marginTop="21dp"
-        android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btEliminarJugadorAdmin" />
+        app:layout_constraintTop_toBottomOf="@+id/btEliminarJugadorAdmin"
+        tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

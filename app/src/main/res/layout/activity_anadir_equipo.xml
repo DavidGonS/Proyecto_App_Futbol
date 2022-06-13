@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="107dp"
         android:layout_marginTop="36dp"
-        android:text="AÑADIR EQUIPO"
+        android:text="@string/anadir_equipo"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
                 android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre:"
+                android:text="@string/nombreFormulario"
                 android:textStyle="bold" />
 
             <EditText
@@ -45,7 +45,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -56,7 +57,7 @@
                 android:id="@+id/textView23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Estadio:"
+                android:text="@string/estadio"
                 android:textStyle="bold" />
 
             <EditText
@@ -64,7 +65,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -75,7 +77,7 @@
                 android:id="@+id/textView24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Puntuación:"
+                android:text="@string/puntuacion"
                 android:textStyle="bold" />
 
             <EditText
@@ -83,7 +85,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="number"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -94,7 +97,7 @@
                 android:id="@+id/textView25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID Liga:"
+                android:text="@string/id_liga"
                 android:textStyle="bold" />
 
             <EditText
@@ -102,7 +105,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -128,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#3F51B5"
                 android:onClick="createTeamInLeague"
-                android:text="AÑADIR" />
+                android:text="@string/a_adir" />
 
         </TableRow>
     </TableLayout>
@@ -141,6 +145,7 @@
         android:layout_marginTop="18dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout4"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

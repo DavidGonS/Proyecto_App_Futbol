@@ -15,7 +15,7 @@
         android:layout_marginTop="34dp"
         android:backgroundTint="#3F51B5"
         android:onClick="goToPlayers"
-        android:text="Jugadores"
+        android:text="@string/jugadores"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTituloAdmin" />
 
@@ -27,7 +27,7 @@
         android:layout_marginTop="28dp"
         android:backgroundTint="#3F51B5"
         android:onClick="goToTeams"
-        android:text="Equipos"
+        android:text="@string/equipos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btJugadoresAdmin" />
 
@@ -39,7 +39,7 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="#3F51B5"
         android:onClick="goToLigas"
-        android:text="Ligas"
+        android:text="@string/ligas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btEquiposAdmin" />
 
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="69dp"
         android:layout_marginTop="45dp"
-        android:text="MENU ADMINISTRACIÓN"
+        android:text="@string/menu_administraci_n"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

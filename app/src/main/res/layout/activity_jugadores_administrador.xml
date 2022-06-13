@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="137dp"
         android:layout_marginTop="41dp"
-        android:text="JUGADORES"
+        android:text="@string/jugadoresTitulo"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="#3F51B5"
         android:onClick="goToDelete"
-        android:text="Eliminar"
+        android:text="@string/eliminar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btModificarJugador" />
 
@@ -39,7 +39,7 @@
         android:layout_marginTop="47dp"
         android:backgroundTint="#3F51B5"
         android:onClick="goToAdd"
-        android:text="Añadir"
+        android:text="@string/a_adir"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTituloJugadoresAdministrador" />
 
@@ -51,7 +51,7 @@
         android:layout_marginTop="22dp"
         android:backgroundTint="#3F51B5"
         android:onClick="goToUpdate"
-        android:text="Modificar"
+        android:text="@string/modificar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btAnadirJugador" />
 </androidx.constraintlayout.widget.ConstraintLayout>

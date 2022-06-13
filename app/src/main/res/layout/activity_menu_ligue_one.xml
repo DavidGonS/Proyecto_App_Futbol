@@ -15,6 +15,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="151dp"
         android:layout_marginBottom="8dp"
+        android:contentDescription="@string/ligafrancesa"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -44,14 +45,6 @@
                 android:text="@string/clasi_fr"
                 tools:ignore="TextContrastCheck" />
         </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
 
         <TableRow
             android:layout_width="match_parent"

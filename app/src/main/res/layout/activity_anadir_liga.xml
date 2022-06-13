@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="133dp"
         android:layout_marginTop="37dp"
-        android:text="AÑADIR LIGA"
+        android:text="@string/anadir_liga"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:layout_marginTop="29dp"
         android:backgroundTint="#3F51B5"
         android:onClick="createLeague"
-        android:text="AÑADIR"
+        android:text="@string/a_adir"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMensaje" />
 
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:layout_marginTop="154dp"
-        android:text="Nombre:"
+        android:text="@string/nombreFormulario"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:layout_marginTop="38dp"
-        android:text="Pais:"
+        android:text="@string/pais"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNombreAnadirLiga" />
@@ -62,7 +62,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/tvNombreAnadirLiga"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloAnadirLiga" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloAnadirLiga"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/etPaisLiga"
@@ -73,7 +74,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/tvPaisAnadirLiga"
-        app:layout_constraintTop_toBottomOf="@+id/etNombreLiga" />
+        app:layout_constraintTop_toBottomOf="@+id/etNombreLiga"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/tvMensaje"
