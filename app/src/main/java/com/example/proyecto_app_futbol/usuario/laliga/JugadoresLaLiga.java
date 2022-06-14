@@ -63,7 +63,7 @@ public class JugadoresLaLiga extends AppCompatActivity {
 
     public void initRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:8080")
+                .baseUrl("http://10.0.2.2:13306")
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
         jugadorCliente = retrofit.create(JugadorCliente.class);
@@ -74,7 +74,7 @@ public class JugadoresLaLiga extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Jugador>> call, Response<List<Jugador>> response) {
                 if (!response.isSuccessful()) {
-                    tvMensaje.setText("Code: " + response.code());
+                    tvMensaje.append("Code: " + response.code());
                     return;
                 }
 
