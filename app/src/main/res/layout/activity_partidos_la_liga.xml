@@ -18,4 +18,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/laliga" />
+
+    <TableLayout
+        android:layout_width="411dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/texv_jornada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jornada 38"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/texV_partido2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Real Madrid 0 - Betis 0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/partido1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rayo Vallecano 2 - Levante 3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/texV_partido3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valencia 2 - Celta 0"
+                tools:ignore="TextContrastCheck" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
