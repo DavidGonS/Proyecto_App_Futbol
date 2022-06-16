@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
 
-public class Jugador {
+public class JugadorList {
     private String idJugador;
     private String nombre;
     private String apellido;
@@ -14,17 +14,19 @@ public class Jugador {
     private String nacionalidad;
     private String posicion;
     private int valorMercado;
+    private String idEquipo;
 
     @JsonCreator
-    public Jugador(
+    public JugadorList(
             @JsonProperty("idJugador") String idJugador,
-            @JsonProperty("nombre") String nombre,
-            @JsonProperty("apellido") String apellido,
-            @JsonProperty("fechaNacimiento") String fechaNacimiento,
-            @JsonProperty("dorsal") int dorsal,
-            @JsonProperty("nacionalidad") String nacionalidad,
-            @JsonProperty("posicion") String posicion,
-            @JsonProperty("valorMercado") int valorMercado) {
+            @JsonProperty("nombre")String nombre,
+            @JsonProperty("apellido")String apellido,
+            @JsonProperty("fechaNacimiento")String fechaNacimiento,
+            @JsonProperty("dorsal")int dorsal,
+            @JsonProperty("nacionalidad")String nacionalidad,
+            @JsonProperty("posicion")String posicion,
+            @JsonProperty("valorMercado")int valorMercado,
+            @JsonProperty("idEquipo")String idEquipo) {
         this.idJugador = idJugador;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -33,6 +35,7 @@ public class Jugador {
         this.nacionalidad = nacionalidad;
         this.posicion = posicion;
         this.valorMercado = valorMercado;
+        this.idEquipo = idEquipo;
     }
 
     public String getIdJugador() {
@@ -99,23 +102,31 @@ public class Jugador {
         this.valorMercado = valorMercado;
     }
 
+    public String getIdEquipo() {
+        return idEquipo;
+    }
+
+    public void setIdEquipo(String idEquipo) {
+        this.idEquipo = idEquipo;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Jugador jugador = (Jugador) o;
-        return idJugador == jugador.idJugador && dorsal == jugador.dorsal && valorMercado == jugador.valorMercado && Objects.equals(nombre, jugador.nombre) && Objects.equals(apellido, jugador.apellido) && Objects.equals(fechaNacimiento, jugador.fechaNacimiento) && Objects.equals(nacionalidad, jugador.nacionalidad) && Objects.equals(posicion, jugador.posicion);
+        JugadorList that = (JugadorList) o;
+        return dorsal == that.dorsal && valorMercado == that.valorMercado && Objects.equals(idJugador, that.idJugador) && Objects.equals(nombre, that.nombre) && Objects.equals(apellido, that.apellido) && Objects.equals(fechaNacimiento, that.fechaNacimiento) && Objects.equals(nacionalidad, that.nacionalidad) && Objects.equals(posicion, that.posicion) && Objects.equals(idEquipo, that.idEquipo);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(idJugador, nombre, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, valorMercado);
+        return Objects.hash(idJugador, nombre, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, valorMercado, idEquipo);
     }
 
     @Override
     public String toString() {
-        return "Jugador{" +
-                "idJugador=" + idJugador +
+        return "JugadorList{" +
+                "idJugador='" + idJugador + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", fechaNacimiento='" + fechaNacimiento + '\'' +
@@ -123,6 +134,7 @@ public class Jugador {
                 ", nacionalidad='" + nacionalidad + '\'' +
                 ", posicion='" + posicion + '\'' +
                 ", valorMercado=" + valorMercado +
+                ", idEquipo='" + idEquipo + '\'' +
                 '}';
     }
 }

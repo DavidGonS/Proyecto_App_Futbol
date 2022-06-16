@@ -20,7 +20,7 @@ public interface LigaCliente {
 
     @DELETE("/ligas/{idLiga}")
     Call<Void> deleteLeague(
-            @Query("idLiga") int idLiga
+            @Path("idLiga") int idLiga
     );
 
     @PUT("/ligas/{idLiga}")

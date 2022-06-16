@@ -88,7 +88,7 @@ public class ModificarJugador extends AppCompatActivity {
                 etValorMercado.getText().toString().isEmpty() || etIdEquipo.getText().toString().isEmpty()) {
             Toast.makeText(this, "Debes rellenar todos los campos", Toast.LENGTH_SHORT).show();
         } else {
-            jugadorCliente.updatePlayer(idJugador, new Jugador(nombre, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, valorMercado)).enqueue(new Callback<Void>() {
+            jugadorCliente.updatePlayer(idJugador, new Jugador(null, nombre, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, valorMercado)).enqueue(new Callback<Void>() {
                 @Override
                 public void onResponse(Call<Void> call, Response<Void> response) {
                     if (response.code() == 204) {

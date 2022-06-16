@@ -61,7 +61,7 @@ public class AnadirJugador extends AppCompatActivity {
 
     public void initRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:13306")
+                .baseUrl("http://10.0.2.2:8080")
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
         jugadorCliente = retrofit.create(JugadorCliente.class);
@@ -84,7 +84,7 @@ public class AnadirJugador extends AppCompatActivity {
             Toast.makeText(this, "Debes rellenar todos lo campos", Toast.LENGTH_SHORT).show();
         } else {
             jugadorCliente.createPlayerInTeam(
-                    new Jugador(nombre, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, valorMercado),
+                    new Jugador(null, nombre, apellido, fechaNacimiento, dorsal, nacionalidad, posicion, valorMercado),
                     idEquipo)
                     .enqueue(new Callback<Void>() {
                 @Override

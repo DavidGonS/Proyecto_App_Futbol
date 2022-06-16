@@ -6,15 +6,26 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 
 public class Liga {
+    private String idLiga;
     private String nombre;
     private String pais;
 
     @JsonCreator
     public Liga(
+            @JsonProperty("idLiga") String idLiga,
             @JsonProperty("nombre") String nombre,
             @JsonProperty("pais") String pais) {
+        this.idLiga = idLiga;
         this.nombre = nombre;
         this.pais = pais;
+    }
+
+    public String getIdLiga() {
+        return idLiga;
+    }
+
+    public void setIdLiga(String idLiga) {
+        this.idLiga = idLiga;
     }
 
     public String getNombre() {
@@ -38,18 +49,19 @@ public class Liga {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Liga liga = (Liga) o;
-        return Objects.equals(nombre, liga.nombre) && Objects.equals(pais, liga.pais);
+        return Objects.equals(idLiga, liga.idLiga) && Objects.equals(nombre, liga.nombre) && Objects.equals(pais, liga.pais);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nombre, pais);
+        return Objects.hash(idLiga, nombre, pais);
     }
 
     @Override
     public String toString() {
         return "Liga{" +
-                "nombre='" + nombre + '\'' +
+                "idLiga='" + idLiga + '\'' +
+                ", nombre='" + nombre + '\'' +
                 ", pais='" + pais + '\'' +
                 '}';
     }

@@ -1,6 +1,7 @@
 package com.example.proyecto_app_futbol.cliente;
 
 import com.example.proyecto_app_futbol.model.Jugador;
+import com.example.proyecto_app_futbol.model.JugadorList;
 
 import java.util.List;
 
@@ -31,7 +32,7 @@ public interface JugadorCliente {
 
     @DELETE("/jugadores/{idJugador}")
     Call<Void> deletePlayer(
-            @Query("idJugador") int idJugador
+            @Path("idJugador") int idJugador
     );
 
     @PUT("/jugadores/{idJugador}")
@@ -39,4 +40,7 @@ public interface JugadorCliente {
             @Path("idJugador") int idJugador,
             @Body Jugador jugador
     );
+
+    @GET("/equipos/{idEquipo}/jugadores")
+    Call<List<JugadorList>> getJugadorByIdEquipo(@Path("idEquipo") int idEquipo);
 }

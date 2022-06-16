@@ -18,6 +18,7 @@ import com.example.proyecto_app_futbol.R;
 import com.example.proyecto_app_futbol.cliente.EquipoCliente;
 import com.example.proyecto_app_futbol.cliente.JugadorCliente;
 import com.example.proyecto_app_futbol.model.Jugador;
+import com.example.proyecto_app_futbol.model.JugadorList;
 
 import org.w3c.dom.Text;
 
@@ -63,23 +64,23 @@ public class JugadoresLaLiga extends AppCompatActivity {
 
     public void initRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:13306")
+                .baseUrl("http://10.0.2.2:8080")
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
         jugadorCliente = retrofit.create(JugadorCliente.class);
     }
 
     public void showPlayers(){
-        jugadorCliente.getAllPlayers().enqueue(new Callback<List<Jugador>>() {
+        jugadorCliente.getJugadorByIdEquipo(1).enqueue(new Callback<List<JugadorList>>() {
             @Override
-            public void onResponse(Call<List<Jugador>> call, Response<List<Jugador>> response) {
+            public void onResponse(Call<List<JugadorList>> call, Response<List<JugadorList>> response) {
                 if (!response.isSuccessful()) {
                     tvMensaje.append("Code: " + response.code());
                     return;
                 }
 
-                List<Jugador> jugadores = response.body();
-                for (Jugador jugador : jugadores) {
+                List<JugadorList> jugadores = response.body();
+                for (JugadorList jugador : jugadores) {
                     tvNombre.setText(jugador.getNombre());
                     tvApellido.setText(jugador.getApellido());
                     tvFechaNacimiento.setText(jugador.getFechaNacimiento());
@@ -90,7 +91,7 @@ public class JugadoresLaLiga extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<Jugador>> call, Throwable t) {
+            public void onFailure(Call<List<JugadorList>> call, Throwable t) {
                 tvMensaje.setText(t.getMessage());
             }
         });

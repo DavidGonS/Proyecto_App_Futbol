@@ -52,7 +52,7 @@ public class AnadirLiga extends AppCompatActivity {
 
     public void initRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:13306")
+                .baseUrl("http://10.0.2.2:8080")
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
         ligaCliente = retrofit.create(LigaCliente.class);
@@ -65,15 +65,13 @@ public class AnadirLiga extends AppCompatActivity {
         if (etNombre.getText().toString().isEmpty() || etPais.getText().toString().isEmpty()) {
             Toast.makeText(this, "Debes rellenar todos los campos", Toast.LENGTH_SHORT).show();
         } else {
-            ligaCliente.createLeague(new Liga(nombre, pais)).enqueue(new Callback<Void>() {
+            ligaCliente.createLeague(new Liga(null,nombre, pais)).enqueue(new Callback<Void>() {
                 @Override
                 public void onResponse(Call<Void> call, Response<Void> response) {
                     if (response.code() == 409){
                         tvMensaje.append("Liga duplicada");
-                        tvMensaje.setText("Liga duplicada");
                     } else {
                         tvMensaje.append("Liga creada");
-                        tvMensaje.setText("Liga creada");
                     }
                 }
 

@@ -51,7 +51,7 @@ public class EliminarLiga extends AppCompatActivity {
 
     public void initRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:13306")
+                .baseUrl("http://10.0.2.2:8080")
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
         ligaCliente = retrofit.create(LigaCliente.class);

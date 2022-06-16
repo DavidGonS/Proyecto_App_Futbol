@@ -22,8 +22,8 @@
 
     <TableLayout
         android:id="@+id/tlJugadores"
-        android:layout_width="397dp"
-        android:layout_height="351dp"
+        android:layout_width="406dp"
+        android:layout_height="168dp"
         android:layout_margin="10dp"
         android:layout_marginStart="3dp"
         android:layout_marginTop="10dp"
@@ -105,8 +105,8 @@
         android:id="@+id/tvMensajeJugadoresLaLiga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="548dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="356dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
